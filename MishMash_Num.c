@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include <conio.h>
+#include <string.h>
 void Swap(int *a, int *b)
 {
     int temp;
@@ -149,7 +150,8 @@ int main()
 
     system("color f5");
     printf("\t\t\t\t∑ℹ️Śɧ∑ãŚɧ▶▶⨅⨆⨝\n\n\t\t\t Player's name: ");
-    gets(str);
+    fgets(str, 100, stdin);
+    str[strlen(str) - 1] = 0;
 
     system("cls");
     Message(str, &count, &chances);
