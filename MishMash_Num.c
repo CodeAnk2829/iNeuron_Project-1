@@ -148,7 +148,7 @@ int main()
     int count = 0, chances = 200;
     char str[100];
 
-    system("color f5");
+    system("color f5"); // Set the system to white background color
     printf("\t\t\t\t∑ℹ️Śɧ∑ãŚɧ▶▶⨅⨆⨝\n\n\t\t\t Player's name: ");
     fgets(str, 100, stdin);
     str[strlen(str) - 1] = 0;
